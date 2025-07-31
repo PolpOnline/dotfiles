@@ -7,6 +7,16 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "edit_predictions": {
+    "disabled_globs": [],
+    "mode": "eager",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+      "enterprise_uri": null
+    },
+    "enabled_in_text_threads": false
+  },
   "context_servers": {
     "postgres-context-server": {
       "source": "extension",
@@ -21,7 +31,7 @@
     "model_parameters": [],
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "model": "gpt-4.1"
     }
   },
   "base_keymap": "JetBrains",
@@ -34,8 +44,8 @@
     "metrics": true
   },
   "theme": "Catppuccin Mocha",
-  "ui_font_size": 13,
-  "buffer_font_size": null,
+  "ui_font_size": 15,
+  "buffer_font_size": 13,
   "ui_font_family": "CaskaydiaCove Nerd Font Mono",
   "buffer_font_family": "CaskaydiaCove Nerd Font Mono",
   "ui_font_features": {
@@ -61,6 +71,11 @@
     "cargo": null
   },
   "lsp": {
+    "biome": {
+      "settings": {
+        "require_config_file": true
+      }
+    },
     "vtsls": {
       "settings": {
         // For JavaScript:
