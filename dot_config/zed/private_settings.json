@@ -43,7 +43,7 @@
     "diagnostics": true,
     "metrics": true
   },
-  "theme": "Catppuccin Mocha",
+  "theme": "Catppuccin Espresso (Blur)",
   "ui_font_size": 15,
   "buffer_font_size": 13,
   "ui_font_family": "CaskaydiaCove Nerd Font Mono",
