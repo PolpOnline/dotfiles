@@ -11,7 +11,7 @@
   "modules-center": ["hyprland/window"],
 
   "modules-right": [
-    "custom/spotify-control",
+    "custom/music-control",
     "pulseaudio",
     "network",
     "temperature",  
@@ -131,19 +131,19 @@
     "max-volume": 150,
     "ignored-sinks": ["Easy Effects Sink"]
   },
-  "custom/spotify-control": {
+  "custom/music-control": {
     "format": "{percentage}% {icon}",
     "return-type": "json",
     "format-icons": {
-      "Playing": "  ",
-      "Paused": "  "
+      "Playing": "  ",
+      "Paused": "  "
     },
     "max-length": 70,
     "tooltip": false,
-    "exec": "playerctl -a metadata -p spotify --format '{\"alt\": \"{{status}}\", \"class\": \"{{status}}\", \"percentage\": {{volume*100}}}' -F",
-    "on-click": "playerctl play-pause -p spotify",
-    "on-scroll-up": "playerctl volume 0.01+ -p spotify",
-    "on-scroll-down": "playerctl volume 0.01- -p spotify"
+    "exec": "playerctl -a metadata -p YoutubeMusic --format '{\"alt\": \"{{status}}\", \"class\": \"{{status}}\", \"percentage\": {{volume*100}}}' -F",
+    "on-click": "playerctl play-pause -p YoutubeMusic",
+    "on-scroll-up": "playerctl volume 0.01+ -p YoutubeMusic",
+    "on-scroll-down": "playerctl volume 0.01- -p YoutubeMusic"
   },
   "clock": {
     // "timezone": "America/New_York",

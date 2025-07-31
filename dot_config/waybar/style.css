@@ -60,7 +60,7 @@ tooltip {
 #workspaces,
 #tray,
 #temperature,
-#custom-spotify-control,
+#custom-music-control,
 #custom-arch-icon {
     background: #1e1e2e;
     padding: 0px 10px;
@@ -119,7 +119,7 @@ tooltip {
 	border-right: 0px;
 }
 
-#custom-spotify-control {
+#custom-music-control {
 	color: @pink;
 	border-radius: 10px 0px 0px 10px;
 	border-right: 0px;
